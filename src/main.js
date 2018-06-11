@@ -1,10 +1,10 @@
 (function() {
 
     function ponsify(lowerLimit, upperLimit, step) {
-      if (lowerLimit>upperLimit) {
+      if (lowerLimit > upperLimit) {
         return 0
       }
-      if (lowerLimit===upperLimit) {
+      if (lowerLimit === upperLimit) {
         return lowerLimit
       }
       return ponsify(lowerLimit+step, upperLimit, step)+lowerLimit
